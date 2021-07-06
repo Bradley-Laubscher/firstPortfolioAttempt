@@ -196,18 +196,6 @@ a {
     transform: scale(1.1);
 }
 
-@media screen and (min-width: 481px) and (max-width: 768px) {
-    .home-heading {
-        top: 45%;
-        left: 15%;
-        width: 70%;
-    }
-    .home-heading h1, a {
-        font-size: 25px;
-        margin: 0;
-    }
-}
-
 @media screen and (max-width: 480px) {
     .home-heading {
         top: 41.3%;
@@ -222,14 +210,26 @@ a {
     }
 }
 
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .home-heading {
+        top: 45%;
+        left: 15%;
+        width: 70%;
+    }
+    .home-heading h1, h2 {
+        font-size: 30px;
+        margin: 0;
+    }
+}
+
 @media screen and (min-width: 769px) and (max-width: 1024px) {
     .home-heading {
         top: 44.3%;
         left: 14%;
         width: 70%;
     }
-    .home-heading h1, a {
-        font-size: 30px;
+    .home-heading h1,h2 {
+        font-size: 35px;
     }
 }
 
@@ -401,7 +401,7 @@ a {
     .projects {
         height: 230px;
     }
-    .project-container button,a  {
+    .project-container button {
         font-size: 15px;
         line-height: 1;
         padding: 0;
