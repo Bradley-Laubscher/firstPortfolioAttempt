@@ -55,10 +55,6 @@ a {
     text-decoration: none;
 }
 
-.logo {
-    display: flex; 
-}
-
 .logo1 img {
     height: 60px;
     width: 60px;
@@ -87,6 +83,24 @@ a {
         transform: rotate(0deg);
     }
 }
+
+@media screen and (min-width: 427px) and (max-width: 1024px) {
+    nav a{
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 426px) {
+    nav a{
+        font-size: 15px;
+    }
+    .logo1 img, .logo2 img {
+        height: 30px;
+        width: 30px;
+    }
+}
+
+
 
 /* Home Page */
 
@@ -149,7 +163,7 @@ a {
     top: 43%;
     left: 35%;
     width: 30%;
-    border: 5px solid black;
+    box-shadow: 0 0 20px;
     background-color: #18f1df;
     animation: changeColor 5s linear infinite;
 }
@@ -160,7 +174,7 @@ a {
 }
 
 .home-heading h1 {
-    font-size: 40px;
+    font-size: 35px;
 }
 
 .home-heading h2 {
@@ -170,7 +184,6 @@ a {
 .home-heading a {
     animation: changeColor 5s linear infinite;
     text-decoration: none;
-    
 }
 
 .entry-link {
@@ -183,15 +196,41 @@ a {
     transform: scale(1.1);
 }
 
-.home-logo {
-    display: flex;
-    justify-content: center;  
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .home-heading {
+        top: 45%;
+        left: 15%;
+        width: 70%;
+    }
+    .home-heading h1, a {
+        font-size: 25px;
+        margin: 0;
+    }
 }
 
-.home-logo img {
-    z-index: 1;
-    height: 60px;
-    width: 60px;
+@media screen and (max-width: 480px) {
+    .home-heading {
+        top: 41.3%;
+        left: 14%;
+        width: 70%;
+        background-color: none;
+        border: none;
+    }
+    .home-heading h1, a {
+        font-size: 20px;
+        margin: 0;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .home-heading {
+        top: 44.3%;
+        left: 14%;
+        width: 70%;
+    }
+    .home-heading h1, a {
+        font-size: 30px;
+    }
 }
 
 /* About Page */
@@ -226,6 +265,30 @@ a {
 
 .skills-list .fab:hover, .fas:hover {
     transform: scale(3);
+}
+
+@media screen and (min-width: 768px) and (max-width: 1025px) {
+    .about-me-section {
+        right: 15%;
+        width: 70%;
+        font-size: 20px;
+        background-color: rgba(255, 255, 255, 0.678);
+    }
+    #skills {
+        margin-top: 80px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .about-me-section {
+        right: 10%;
+        width: 80%;
+        font-size: 10px;
+        background-color: rgba(255, 255, 255, 0.678);
+    }
+    #skills {
+        margin-top: 20px;
+    }
 }
 
 
@@ -308,6 +371,45 @@ a {
     margin-top: 1.7%;
 }
 
+@media screen and (max-width: 767px) {
+    .projects-container {
+        width: 80%;
+        right: 10%;
+    }
+
+    .project-container button, a {
+        font-size: 10px;
+    }
+    .projects {
+        height: 140px;
+    }
+    .projects button {
+        margin-top: 60px;
+        padding: 3px;
+    }
+    .project-name {
+       font-size: 10px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1025px) {
+    .projects-container {
+        width: 70%;
+        right: 15%;
+    }
+    .projects {
+        height: 230px;
+    }
+    .project-container button,a  {
+        font-size: 15px;
+        line-height: 1;
+        padding: 0;
+    }
+    .project-name {
+        font-size: 20px;
+     }
+}
+
 /* Contact Page */
 
 .contact-me {
@@ -329,4 +431,42 @@ a {
 
 .fab {
     font-size: 25px;
+}
+
+@media screen and (max-width: 767px) {
+   .contact-me {
+    top: 15%;
+    right: 20%;
+    width: 60%;
+    background-color: rgba(255, 255, 255, 0.678);
+   }
+   .contact-me li {
+        line-height: 60px;
+        font-size: 15px;
+    }
+    .contact-me h2 {
+        font-size: 15px;
+    }
+    .contact-me a {
+        font-size: 15px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1025px) {
+    .contact-me {
+        top: 15%;
+        right: 15%;
+        width: 70%;
+        background-color: rgba(255, 255, 255, 0.678);
+    }
+    .contact-me li {
+        line-height: 60px;
+        font-size: 25px;
+    }
+    .contact-me h2 {
+        font-size: 30px;
+    }
+    .contact-me a {
+        font-size: 25px;
+    }
 }
