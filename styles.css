@@ -245,6 +245,8 @@ a {
     margin-top: 20px;
     font-weight: bold;
     font-size: 15px;
+    color: #18f1df;
+    animation: changeColor 5s linear infinite;
 }
 
 .projects-container button {
