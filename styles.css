@@ -378,7 +378,7 @@ a {
         right: 10%;
     }
 
-    .project-container button, a {
+    .project-container button {
         font-size: 10px;
     }
     .projects {
