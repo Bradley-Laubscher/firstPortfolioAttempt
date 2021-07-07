@@ -289,7 +289,6 @@ a {
     }
 }
 
-
 /* Projects page */
 
 .projects-container {
@@ -345,16 +344,6 @@ a {
     width: 48%;
     height: 200px;
     background-image: url(./Resources/organic\ tea.jpg);
-    background-size: cover;
-    margin-top: 1.7%;
-}
-
-.fotomatic {
-    color: white;
-    text-align: center;
-    width: 48%;
-    height: 200px;
-    background-image: url(./Resources/Camera.jpg);
     background-size: cover;
     margin-top: 1.7%;
 }
