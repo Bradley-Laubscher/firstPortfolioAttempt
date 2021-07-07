@@ -1,0 +1,2 @@
+This is my portfolio for the projects that I have been working on during the online course I am participating in through the CodeCademy website.
+It involves projects that are created using html, CSS as well as JavaScript in some of the more recent projects.
